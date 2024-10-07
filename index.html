@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>Тест отправки ECHO запроса на сервер</p>
+        <form action="https://example.shaklein.dev/echo.php" method="POST">
+            <label>
+                Поле для ввода текста
+                <input type="text" name="text" placeholder="Введите любой текст">
+            </label>
+            <button>Отправить</button>
+        </form>
+    </div>
+
+    <div>
+        <p>Тест подписки с помощью почты</p>
+        <form action="https://example.shaklein.dev/subscribe.php" method="POST">
+            <label>
+                Введите Email:
+                <input type="email" name="email" placeholder="Введите почту">
+            </label>
+            <button>Отправить</button>
+        </form>
+    </div>
+
+    <div>
+        <p>Тест работы калькулятора</p>
+        <form action="https://example.shaklein.dev/plus.php" method="POST">
+            <label>
+                Введите число A:
+                <input type="number" name="a" placeholder="Введите число A">
+            </label>
+            <label>
+                Введите число Б:
+                <input type="number" name="b" placeholder="Введите число Б">
+            </label>
+            <button>Отправить</button>
+        </form>
+    </div>
+
+    <div>
+        <p>Тест отправки файла</p>
+        <form action="https://example.shaklein.dev/upload.php" method="POST" enctype="multipart/form-data">
+            <label> 
+                Загрузите изображение:
+                <input type="file" name="avatar">
+            </label>
+            <button>Отправить</button>
+        </form>
+    </div>
+</body>
+</html>
